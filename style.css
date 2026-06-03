@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f1f1f5;
+}
+
+.wrapper{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.sub-container{
+    background:#fff;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.sub-container h3{
+    margin-bottom:15px;
+    color:#363d55;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #d0d0d0;
+    border-radius:4px;
+    margin-bottom:12px;
+    outline:none;
+}
+
+button{
+    background:#587ef4;
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    border-radius:0.3em;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.output-container{
+    margin-top:25px;
+    background:#587ef4;
+    color:#fff;
+    border-radius:8px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    text-align:center;
+    padding:25px;
+}
+
+.output-container p{
+    font-weight:600;
+}
+
+.output-container span{
+    display:block;
+    margin-top:10px;
+    font-size:20px;
+}
+
+.list{
+    background:#fff;
+    margin-top:25px;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.list h3{
+    margin-bottom:20px;
+}
+
+
+.sublist-content{
+    display:flex;
+    align-items:center;
+    width:100%;
+    border-left:4px solid #45517c;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.product{
+    flex:1;
+    text-align:left;
+}
+
+.amount{
+    width: 270px;
+    text-align:center;
+}
+
+.icons{
+    width: 270px;
+    display:flex;
+    justify-content:space-evenly;
+    gap:15px;
+}
+
+.edit{
+    color:#587ef4;
+    cursor:pointer;
+}
+
+.delete{
+    color:#587ef4;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .output-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+}
+@media(max-width:768px){
+    .amount{
+        width:60px;
+    }
+
+    .icons{
+        width:80px;
+    }
+}

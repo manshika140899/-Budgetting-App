@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+
+    <!-- Top Section -->
+    <div class="container">
+
+        <!-- Budget Box -->
+        <div class="sub-container">
+            <h3>Budget</h3>
+
+            <input
+                type="number"
+                id="budget-input"
+                placeholder="Enter Total Amount"
+            >
+
+            <button id="budget-button">
+                Set Budget
+            </button>
+        </div>
+
+        <!-- Expense Box -->
+        <div class="sub-container">
+            <h3>Expenses</h3>
+
+            <input
+                type="text"
+                id="product-title"
+                placeholder="Enter Title of Product"
+            >
+
+            <input
+                type="number"
+                id="user-amount"
+                placeholder="Enter Cost of Product"
+            >
+
+            <button id="check-amount">
+                Check Amount
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-container">
+
+        <div>
+            <p>Total Budget</p>
+            <span id="amount">0</span>
+        </div>
+
+        <div>
+            <p>Expenses</p>
+            <span id="expenditure-value">0</span>
+        </div>
+
+        <div>
+            <p>Balance</p>
+            <span id="balance-amount">0</span>
+        </div>
+
+    </div>
+
+    <!-- Expense List -->
+    <div class="list">
+        <h3>Expense List</h3>
+
+        <div id="list-container"></div>
+    </div>
+
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
